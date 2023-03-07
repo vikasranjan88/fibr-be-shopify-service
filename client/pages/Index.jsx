@@ -28,49 +28,7 @@ const HomePage = () => {
             </p>
           </Card>
         </Layout.Section>
-        <Layout.Section oneHalf>
-          <Card
-            sectioned
-            title="Repository"
-            primaryFooterAction={{
-              content: "GitHub",
-              onAction: () => {
-                redirect.dispatch(Redirect.Action.REMOTE, {
-                  url: "https://github.com/kinngh/shopify-node-express-mongodb-app",
-                  newContext: true,
-                });
-              },
-            }}
-            secondaryFooterActions={[
-              {
-                content: "Open Issue",
-                onAction: () => {
-                  redirect.dispatch(Redirect.Action.REMOTE, {
-                    url: "https://github.com/kinngh/shopify-node-express-mongodb-app/issues?q=is%3Aissue",
-                    newContext: true,
-                  });
-                },
-              },
-            ]}
-          >
-            <p>Star the repository, open a new issue or start a discussion.</p>
-          </Card>
-          <Card
-            sectioned
-            title="Changelog"
-            primaryFooterAction={{
-              content: "Explore",
-              onAction: () => {
-                redirect.dispatch(Redirect.Action.REMOTE, {
-                  url: "https://shopify.dev/changelog/",
-                  newContext: true,
-                });
-              },
-            }}
-          >
-            <p>Explore changelog on Shopify.dev and follow updates.</p>
-          </Card>
-        </Layout.Section>
+
         <Layout.Section oneHalf>
           <Card
             sectioned
@@ -99,32 +57,6 @@ const HomePage = () => {
             <p>
               Explore the GraphQL APIs in Graphiql or read design guidelines.
             </p>
-          </Card>
-          <Card
-            sectioned
-            title="Hiring?"
-            primaryFooterAction={{
-              content: "Twitter",
-              onAction: () => {
-                redirect.dispatch(Redirect.Action.REMOTE, {
-                  url: "https://www.twitter.com/kinngh",
-                  newContext: true,
-                });
-              },
-            }}
-            secondaryFooterActions={[
-              {
-                content: "LinkedIn",
-                onAction: () => {
-                  redirect.dispatch(Redirect.Action.REMOTE, {
-                    url: "https://www.linkedin.com/in/theharshdeep/",
-                    newContext: true,
-                  });
-                },
-              },
-            ]}
-          >
-            <p>🌎 / 🇨🇦 and looking to expand your engineering team?</p>
           </Card>
         </Layout.Section>
         <Layout.Section fullWidth>
